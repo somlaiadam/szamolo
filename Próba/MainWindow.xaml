@@ -1,0 +1,34 @@
+﻿<Window x:Class="Próba.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Próba"
+        mc:Ignorable="d"
+        Title="Számol" Height="450" Width="800" Icon="https://github.com/somlaiadam/szamolo/blob/picture/vector.png?raw=true" Background="White">
+    <Grid>
+        <TextBox x:Name="textBox_téglasz" HorizontalAlignment="Left" Height="23" Margin="27,226,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="textBox_TextChanged" FontFamily="Segoe UI Light" FontSize="14"/>
+        <TextBox x:Name="textBox1_téglam" HorizontalAlignment="Left" Height="22" Margin="189,226,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="textBox1_TextChanged" FontFamily="Segoe UI Light" FontSize="14"/>
+        <TextBox x:Name="textBox2" HorizontalAlignment="Left" Height="24" Margin="189,321,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontFamily="Segoe UI Light"/>
+        <Button x:Name="számol" Content="Számol" Margin="46,306,0,0" VerticalAlignment="Top" Width="76" Click="Button_Click" HorizontalAlignment="Left" Background="White"/>
+        <Label Content="Szélesség" HorizontalAlignment="Left" Margin="22,192,0,0" VerticalAlignment="Top" FontFamily="Segoe UI Light" FontSize="14"/>
+        <Label Content="Magasság" HorizontalAlignment="Left" Margin="184,192,0,0" VerticalAlignment="Top" FontFamily="Segoe UI Light" FontSize="14"/>
+        <Label Content="Ár:" HorizontalAlignment="Left" Margin="189,287,0,0" VerticalAlignment="Top" FontFamily="Segoe UI Light" FontSize="14"/>
+        <Label Content="Üdvözöljük a Számol programban!" Margin="0,10,0,0" VerticalAlignment="Top" HorizontalAlignment="Center" FontFamily="Segoe UI Light" FontSize="20"/>
+        <Label Content="Adja meg a mértékegységet:" HorizontalAlignment="Left" Margin="46,85,0,0" VerticalAlignment="Top" FontFamily="Segoe UI Light"/>
+        <RadioButton x:Name="meter" Content="Négyzetméter" HorizontalAlignment="Left" Margin="46,115,0,0" VerticalAlignment="Top" Checked="meter_Checked" FontFamily="Segoe UI Light"/>
+        <RadioButton x:Name="mili" Content="Négyzetmiliméter" HorizontalAlignment="Left" Margin="46,136,0,0" VerticalAlignment="Top" Checked="mili_Checked" FontFamily="Segoe UI Light"/>
+        <TextBox x:Name="szélmérték" HorizontalAlignment="Left" Height="23" Margin="86,196,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="72" FontFamily="Segoe UI Light" FontSize="14" BorderBrush="White"/>
+        <TextBox x:Name="hosszmérték" HorizontalAlignment="Left" Height="23" Margin="248,196,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="72" FontFamily="Segoe UI Light" FontSize="14" BorderBrush="White"/>
+        <Label Content="Adja meg az alapanyag árát m2-ben:" HorizontalAlignment="Left" Margin="336,105,0,0" VerticalAlignment="Top" FontFamily="Segoe UI Light" FontSize="14"/>
+        <TextBox x:Name="ár" HorizontalAlignment="Left" Height="23" Margin="564,107,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontFamily="Segoe UI Light" FontSize="14" TextChanged="ár_TextChanged"/>
+        <Border BorderBrush="#FFABADB3" BorderThickness="1" HorizontalAlignment="Left" Height="1" Margin="0,156,0,0" VerticalAlignment="Top" Width="792"/>
+        <Border BorderBrush="#FFABADB3" BorderThickness="1" HorizontalAlignment="Left" Height="1" Margin="0,84,0,0" VerticalAlignment="Top" Width="792"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="752,379,0,0" VerticalAlignment="Top" Width="30" Foreground="{x:Null}" Height="30" Click="Button_Click_2">
+            <Button.Background>
+                <ImageBrush ImageSource="https://github.com/somlaiadam/szamolo/blob/picture/help.png?raw=true" Stretch="Uniform"/>
+            </Button.Background>
+        </Button>
+
+    </Grid>
+</Window>
